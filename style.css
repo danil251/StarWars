@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, serif;
+}
+.header {
+    background-color: #000;
+    width: 100%;
+    height: 80px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+.title {
+    color: #FFE81F;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+.text {
+    color: #fff;
+    font-size: 20px;
+}
+.main {
+    background-color: #F0F5F7;
+    min-height: calc(100vh - 180px);
+}
+.wrap {
+    display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding-top: 70px;
+    width: 600px;
+    margin: 0 auto;
+
+}
+.input {
+    width: 540px;
+    height: 30px;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    color: #808080;
+}
+.btn {
+    padding: 5px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+.footer {
+    background-color: #000;
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.wrapCard {
+    width: 260px;
+    height: 270px;
+    background-color: #EEEFF1;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 #00000040;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 16px;
+
+}
+.name {
+    font-weight: 700;
+    font-size: 26px;
+}
+.eyeColor {
+    display: flex;
+}
+.color {
+    width: 20px;
+    height:20px;
+    margin-left: 10px
+}
+
+@media only screen and (max-width: 650px) {
+    .header {
+        flex-direction: column;
+        justify-content: normal;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .wrap {
+        width: auto;
+        padding: 30px 20px;
+    }
+}
